@@ -1,22 +1,50 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dock: false
+configure_dotfiles: true
+configure_dock: true
+
 dockitems_remove:
   - Maps
   - TV
   - Podcasts
   - News
   - 'App Store'
+  - Music
+  - Freeform
+  - Contacts
+  - Calendar
+  - Reminders
+  - Notes
+  - Messages
+  - FaceTime
+  - Photos
+  - Mail
+  - Safari
 dockitems_persist:
+  - name: "Google Chrome"
+    path: "/Applications/Google Chrome.app/"
+    pos: 2
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
+    pos: 3
+  - name: iTerm
+    path: "/Applications/iTerm.app/"
+    pos: 4
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     pos: 5
 
+dotfiles_repo: https://github.com/FullStackIndustries/dotfiles.git
+dotfiles_repo_version: main
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Developer/GitHub/dotfiles
+dotfiles_files:
+  - .zshrc
+
 homebrew_installed_packages:
   - git
   - github/gh/gh
-  - node
   - nvm
 
 homebrew_taps:
@@ -27,6 +55,8 @@ homebrew_cask_appdir: /Applications
 
 homebrew_cask_apps:
   - 1password
+  - google-drive
+  - iterm2
   - dbeaver-community
   - docker
   - firefox
@@ -35,5 +65,7 @@ homebrew_cask_apps:
   - transmit
   - visual-studio-code
   - local
+  - figma
 
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 506189836, name: "Harvest" }
