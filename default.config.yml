@@ -9,7 +9,7 @@ dockitems_remove:
   - TV
   - Podcasts
   - News
-  - 'App Store'
+  - "App Store"
   - Music
   - Freeform
   - Contacts
@@ -66,6 +66,3 @@ homebrew_cask_apps:
   - visual-studio-code
   - local
   - figma
-
-mas_installed_apps:
-  - { id: 506189836, name: "Harvest" }
