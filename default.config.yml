@@ -57,7 +57,7 @@ homebrew_cask_apps:
   - 1password
   - google-drive
   - iterm2
-  - dbeaver-community
+  - tableplus
   - docker
   - firefox
   - google-chrome
