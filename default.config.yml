@@ -67,3 +67,5 @@ homebrew_cask_apps:
   - local
   - figma
   - notion
+
+mas_installed_apps: []
